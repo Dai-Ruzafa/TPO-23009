@@ -1,0 +1,128 @@
+*{
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.3rem;
+    height: 100%;
+}
+
+body, header, main, footer{
+    min-height: 50px;
+    margin: 10px;
+    min-width: 400px;
+    
+}
+
+body{
+    background-color: rgb(139, 211, 245);
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+main{
+    min-height: 100px;
+    overflow: auto;
+    background-color: white;
+}
+
+header{
+    background: white;
+    box-shadow: 0 0 0.5rem rgba(14, 82, 185, 0.7);
+}
+
+footer{
+    background: white;
+    min-block-size: 10rem;
+}
+
+main>div {
+    min-height: 180px;
+    margin: 10px;
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+main>aside {
+    min-height: 180px;
+    margin: 10px;
+    min-width: 30%;
+    float: left;
+    width: auto;
+}
+
+.secciones{
+    min-height: 50px;
+    margin: 10px;
+    background: white;
+}
+
+.secciones article{
+    margin: 10px;
+    min-height: 20px;
+}
+
+/* logo y menu */
+
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.header-menubar{
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0  2.5rem 0.5rem;
+}
+
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.5rem 0;
+}
+/*
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-menubar a:hover {
+    color: blue;
+
+
+}
+*/
+.button {
+    color: white;
+    background-color: rgb(67, 37, 177);
+    border-radius: 3%;
+    padding: 10px 20px;
+
+}
+
+.button:hover{
+    color: rgb(155, 198, 248);
+    background-color: rgb(91, 49, 209);
+    border-radius: 9%;
+    padding: 12px 24px;
+}
+
+.header-menubar li a {
+    font-size: 1.2rem;
+    text-decoration-line: none;
+}
+
+h1{
+    justify-content: center;
+}
