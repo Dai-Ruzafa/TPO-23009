@@ -15,6 +15,12 @@ body, header, main, footer{
     
 }
 
+.contenido {
+    min-height: 50px;
+    margin: 10px;
+    min-width: 400px;
+}
+
 body{
     background-color: rgb(139, 211, 245);
     font-family: 'Ubuntu', sans-serif;
@@ -125,4 +131,12 @@ main>aside {
 
 h1{
     justify-content: center;
+}
+.footer ul {
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    margin: 0.5rem 0  2.5rem 0.5rem;
+    float: left;
+    text-decoration-line: none;
 }
