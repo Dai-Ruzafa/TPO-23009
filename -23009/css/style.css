@@ -150,6 +150,5 @@ textarea {
     padding: 7px;
 }
 .form {
-    min width: 400px;
-    
+    min-width: 400px;
 }
