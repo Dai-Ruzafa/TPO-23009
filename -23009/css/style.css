@@ -129,9 +129,6 @@ main>aside {
     text-decoration-line: none;
 }
 
-h1{
-    justify-content: center;
-}
 .footer ul {
     display: inline-flex;
     list-style: none;
@@ -139,4 +136,20 @@ h1{
     margin: 0.5rem 0  2.5rem 0.5rem;
     float: left;
     text-decoration-line: none;
+}
+.title {
+    text-align: center;
+}
+textarea {
+    border-bottom: 3px solid teal;
+    resize: none;
+}
+.form__input {
+    border-bottom: 3px solid teal;
+    width: 30%;
+    padding: 7px;
+}
+.form {
+    min width: 400px;
+    
 }

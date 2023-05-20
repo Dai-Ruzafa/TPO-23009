@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <h1>Software Center</h1>
+  <h1 class="title">Software Center</h1>
   <header> 
     <div class="header-logo"><a href="index.html"><img src="imagenes/logosoft.jpg" alt=""></a></div>
     <nav class="header-menubar">
@@ -24,23 +24,28 @@
 </header>
     
 
-<form action="/action_page.php">
- <fieldset>
+<form action="/action_page.php" class="form">
 <div>
   <legend>Campos para consulta:</legend>
 </div>
-  <label for="fname">Nombre:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Apellido:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
+  <br>
+   <div class="form__section">
+     <input type="text" id="fname" name="fname" class="form__input" placeholder="Nombre"><br><br>
+   </div>
+   <div class="form__section">
+     <input type="text" id="lname" name="lname" class="form__input" placeholder="Apellido"><br><br>
+   </div>
+   <div class="form__section">
+     <input type="email" id="email" name="email" class="form__input" placeholder="Email"><br><br>
+   </div>
   <label for="birthday">Fecha de Nacimiento:</label>
   <input type="date" id="birthday" name="birthday"><br><br>
-  Consulta: <textarea name="comentario" rows="10" cols="40">Escribe tu consulta...</textarea>
+  <textarea class="form__input" name="comentario" rows="10" cols="40" placeholder="Escriba su Consulta"></textarea>
   <br>
-  <input type="submit" value="Enviar">
- </fieldset>
+   <div class="form__section">
+     <input type="submit" value="Enviar" class="form__input">
+   </div>
+
 </form>
 <footer>
         
