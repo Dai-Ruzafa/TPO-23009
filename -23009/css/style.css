@@ -129,12 +129,12 @@ main>aside {
     text-decoration-line: none;
 }
 
-.footer ul {
-    display: inline-flex;
+.footer li {
+    display: inline-block;
+    float: none;
     list-style: none;
     text-align: center;
-    margin: 0.5rem 0  2.5rem 0.5rem;
-    float: left;
+    margin: .5rem 1rem .5rem 1rem;
     text-decoration-line: none;
 }
 .title {
@@ -151,4 +151,7 @@ textarea {
 }
 .form {
     min-width: 400px;
+}
+.form__section {
+    text-align: center;
 }

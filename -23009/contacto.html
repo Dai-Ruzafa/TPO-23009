@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/NicePng_software-png_2186546.ico" type="icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Formulario de Consulta</title>
@@ -24,7 +25,7 @@
 </header>
     
 
-<form action="/action_page.php" class="form">
+<form action="https://formspree.io/f/xknaekow" method="post" class="form">
 <div>
   <legend>Campos para consulta:</legend>
 </div>
@@ -38,10 +39,10 @@
    <div class="form__section">
      <input type="email" id="email" name="email" class="form__input" placeholder="Email"><br><br>
    </div>
-  <label for="birthday">Fecha de Nacimiento:</label>
-  <input type="date" id="birthday" name="birthday"><br><br>
-  <textarea class="form__input" name="comentario" rows="10" cols="40" placeholder="Escriba su Consulta"></textarea>
-  <br>
+   <div class="form__section"><label for="birthday" >Fecha de Nacimiento:</label>
+     <input type="date" id="birthday" name="birthday"><br><br></div>
+   <div class="form__section"><textarea class="form__input" name="comentario" rows="10" cols="40" placeholder="Escriba su Consulta"></textarea>
+  <br></div>
    <div class="form__section">
      <input type="submit" value="Enviar" class="form__input">
    </div>
@@ -55,9 +56,7 @@
     <div class="footer">
       <ul>
         <li><a href="index.html" class="button">Inicio</a></li>
-        <br>
         <li><a href="softwares.html" class="button">Acerca de</a></li>
-        <br>
         <li><a href="contacto.html" class="button">Contactanos</a></li>
       </ul>
     </div>
