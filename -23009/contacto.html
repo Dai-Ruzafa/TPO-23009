@@ -25,19 +25,22 @@
 </header>
     
 
-<form action="https://formspree.io/f/xknaekow" method="post" class="form">
+<form action="https://formspree.io/f/xknaekow" method="post" class="form" onsubmit="return validacion();">
 <div>
   <legend>Campos para consulta:</legend>
 </div>
   <br>
    <div class="form__section">
-     <input type="text" id="fname" name="fname" class="form__input" placeholder="Nombre"><br><br>
+     <input type="text" id="fname" name="fname" class="form__input" placeholder="Nombre" ><br><br>
+     <label id="mensaje0"></label><br><br>
    </div>
    <div class="form__section">
      <input type="text" id="lname" name="lname" class="form__input" placeholder="Apellido"><br><br>
-   </div>
+     <label id="mensaje1"></label><br><br>   
+    </div>
    <div class="form__section">
      <input type="email" id="email" name="email" class="form__input" placeholder="Email"><br><br>
+     <label id="mensaje2"></label><br><br>
    </div>
    <div class="form__section"><label for="birthday" >Fecha de Nacimiento:</label>
      <input type="date" id="birthday" name="birthday"><br><br></div>
@@ -48,6 +51,43 @@
    </div>
 
 </form>
+
+<script>
+  function validacion() 
+  {
+      valor0 = document.getElementById("fname").value;
+      valor1 = document.getElementById("lname").value;
+      valor2 = document.getElementById("email").value;
+      if( valor0 == null || valor0.length == 0) 
+      {
+          
+          document.getElementById('mensaje0').innerHTML = "Tenes que completar el Nombre!";
+          elemento = document.getElementById('fname');
+          elemento.focus();
+          
+          return false;
+      }
+      if( valor1 == null || valor1.length == 0)
+      {
+        document.getElementById('mensaje1').innerHTML = "Tenes que completar el Apellido!";
+        elemento = document.getElementById("lname");
+        elemento.focus();
+
+        return false;
+      }
+      else( valor2 == null || valor2.length == 0)
+      {
+        document.getElementById('mensaje2').innerHTML = "Tenes que completar el E-mail!";
+        elemento = document.getElementById("email");
+        elemento.focus();
+
+        return false;
+      }
+      
+      return true; 
+  }
+</script>
+
 <footer>
         
   <div>
