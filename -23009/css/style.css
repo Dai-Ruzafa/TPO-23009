@@ -168,3 +168,13 @@ textarea {
         align-items: center;
     }
 }
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+div.whatsapp-logo img{
+    width: 100px;
+}
