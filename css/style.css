@@ -79,12 +79,12 @@ main>aside {
 }
 
 .header-menubar{
-    left: auto;
+    left: 0.5em;
     position: relative;
     top: auto;
     width: auto;
     display: inline-block;
-    margin: 0.5rem 0  2.5rem 0.5rem;
+    margin: 0.5rem 0  2rem 0.5rem;
 }
 
 .header-menubar ul {
@@ -183,4 +183,49 @@ div.whatsapp-logo img{
     .secciones img{
         width: 300px;
     }
+}
+/*************/
+
+header div.contenedor {
+    place-content: flex-start;
+}
+
+header div.contenedor nav.header-menubar{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+}
+
+#menu, #menu-check {
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    header div.contenedor {
+        display: flex;
+        place-content: space-between;
+        font-weight: bold;
+        border: 3px solid rgb(15, 138, 199);
+    }
+    #menu-check:not(:checked) ~ nav.header-menubar {
+        display: none;
+    }
+    #menu-check:checked ~ nav.header-menubar {
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        color: rgb(26, 69, 144);
+        background-color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 4.5em;
+    }
+    #menu-cerrar {
+        display: none;
+    }
+
 }
