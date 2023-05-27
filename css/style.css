@@ -176,7 +176,7 @@ textarea {
   }
 
 div.whatsapp-logo img{
-    width: 100px;
+    width: 70px;
 }
 
 @media only screen and (max-width: 480px){
@@ -227,5 +227,11 @@ header div.contenedor nav.header-menubar{
     #menu-cerrar {
         display: none;
     }
-
-}
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+        display: block;
+    }
+    
+    }
