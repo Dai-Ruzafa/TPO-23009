@@ -147,7 +147,7 @@ textarea {
 }
 .form__input {
     border-bottom: 3px solid teal;
-    width: 30%;
+    width: 35%;
     padding: 7px;
 }
 .form {
@@ -177,4 +177,10 @@ textarea {
 
 div.whatsapp-logo img{
     width: 100px;
+}
+
+@media only screen and (max-width: 480px){
+    .secciones img{
+        width: 300px;
+    }
 }
