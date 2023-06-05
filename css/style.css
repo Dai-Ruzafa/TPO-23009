@@ -78,13 +78,13 @@ main>aside {
     margin: 0.5rem;
 }
 
-.header-menubar{
+div.header-menubar{
     left: 0.5em;
     position: relative;
     top: auto;
     width: auto;
     display: inline-block;
-    margin: 0.5rem 0  2rem 0.5rem;
+    margin: 0rem 5em  4em 0.5rem;
 }
 
 .header-menubar ul {
@@ -95,7 +95,7 @@ main>aside {
     float: left;
     font-weight: 700;
     text-align: center;
-    margin: 0 0.5rem 0;
+    margin: 0 0.5rem 1em 1em;
 }
 /*
 .header-menubar a {
