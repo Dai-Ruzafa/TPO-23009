@@ -89,13 +89,15 @@ div.header-menubar{
 
 .header-menubar ul {
     list-style: none;
+    right: -0.5em;
+    position: relative;
+    top: -4.5em;
 }
-
 .header-menubar li {
     float: left;
     font-weight: 700;
     text-align: center;
-    margin: 0 0.5rem 1em 1em;
+    margin: 0 1rem 1em 1em;
 }
 /*
 .header-menubar a {
@@ -190,17 +192,20 @@ header div.contenedor {
     place-content: flex-start;
 }
 
-header div.contenedor nav.header-menubar{
-    width: 70%;
+div.contenedor nav.header-menubar{
+    width: auto;
     display: flex;
     place-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: flex-end;
 }
 
 #menu, #menu-check {
     display: none;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 810px){
     header div.contenedor {
         display: flex;
         place-content: space-between;
@@ -233,5 +238,4 @@ header div.contenedor nav.header-menubar{
     #menu-check:checked ~ label #menu-cerrar {
         display: block;
     }
-    
-    }
+}
